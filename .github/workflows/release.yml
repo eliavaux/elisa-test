@@ -39,6 +39,7 @@ jobs:
         name: build-windows
         path: target/release/elisa.exe
 
+  build-macos:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
