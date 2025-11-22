@@ -23,7 +23,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-linux
-        path: target/release/elisa
+        path: target/release/elisa-linux
 
   build-windows:
     runs-on: windows-latest
@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-windows
-        path: target/release/elisa.exe
+        path: target/release/elisa-windows.exe
 
   build-macos:
     runs-on: macos-latest
@@ -51,7 +51,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-macos
-        path: target/release/elisa
+        path: target/release/elisa-macos
 
   release:
     # This job runs only after both build jobs successfully complete
